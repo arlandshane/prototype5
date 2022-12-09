@@ -1,0 +1,153 @@
+body {
+    user-select: none;
+    background-color: papayawhip;
+    background-size: cover;
+}
+
+img {
+    opacity: 0;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: .7rem;
+    position: absolute;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Sacramento', cursive;
+    font-weight: 500;
+    left: 41.5%;
+    top: 40%;
+}
+
+.btn:hover {
+    color: pink;
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.image {
+    width: inherit;
+}
+
+.tile>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.tile:hover>img {
+    opacity: 1;
+    transform: scale(1.2);
+    transition-duration: 700ms;
+}
+
+.tile {
+    animation: example1;
+    opacity: 1;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.tile:nth-child(1) {
+    background: none;
+    background-color: #fab5b1;
+    width: 15%;
+    left: 5%;
+    top: 5%;
+    animation-duration: 3s;
+}
+
+.tile:nth-child(2) {
+    background-color: #ac83a6;
+    width: 15%;
+    left: 80%;
+    top: 55%;
+    animation-duration: 3s;
+}
+
+.tile:nth-child(3) {
+    background-color: #f8cbdb;
+    width: 15%;
+    left: 25%;
+    top: 15%;
+    animation-duration: 3.5s;
+}
+
+.tile:nth-child(4) {
+    background-color: #d6d999;
+    width: 15%;
+    left: 25%;
+    top: 65%;
+    animation-duration: 3.5s;
+}
+
+.tile:nth-child(5) {
+    background-color: #e7dcb8;
+    width: 15%;
+    left: 80%;
+    top: 5%;
+    animation-duration: 3s;
+}
+
+.tile:nth-child(6) {
+    background-color: #d99999;
+    width: 15%;
+    left: 60%;
+    top: 65%;
+    animation-duration: 3.5s;
+}
+
+.tile:nth-child(7) {
+    background-color: #add0a5;
+    width: 15%;
+    left: 5%;
+    top: 55%;
+    animation-duration: 3s;
+}
+
+.tile:nth-child(8) {
+    background-color: #c3dfc3;
+    width: 15%;
+    left: 60%;
+    top: 15%;
+    animation-duration: 3s;
+}
+
+@keyframes example1 {
+    0% {
+        left: 40%;
+        top: 40%;
+    }
+}
+
+.small-download-button {
+    opacity: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    border-radius: 5px;
+    position: inherit;
+    left: 75%;
+    top: 70%;
+    cursor: pointer;
+}
+
+.big-download-button {
+    opacity: 0;
+    width: 21%;
+    height: 14%;
+    border: none;
+    border-radius: 5px;
+    position: inherit;
+    left: 75%;
+    top: 80%;
+    cursor: pointer;
+}
